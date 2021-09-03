@@ -8,22 +8,22 @@ public class MenuPanel extends JPanel implements ActionListener {
     public static final int WIDTH = 300;
     private final JButton startButton;
     private final JButton autorsButton;
-    private final JButton redButton;
+    private final JButton settingsButton;
 
     public MenuPanel() {
-        startButton = new JButton("Green");
-        autorsButton = new JButton("Blue");
-        redButton = new JButton("Red");
+        startButton = new JButton("Start");
+        autorsButton = new JButton("Autorzy");
+        settingsButton = new JButton("Ustawienia");
 
         startButton.addActionListener(this);
         autorsButton.addActionListener(this);
-        redButton.addActionListener(this);
+        settingsButton.addActionListener(this);
 
         setLayout(new FlowLayout());
         setPreferredSize(new Dimension(WIDTH, HEIGHT));
         add(startButton);
         add(autorsButton);
-        add(redButton);
+        add(settingsButton);
     }
 
     @Override
