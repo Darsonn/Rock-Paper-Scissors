@@ -1,5 +1,12 @@
+import java.awt.*;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Siemano!");
+        EventQueue.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new Frame();
+            }
+        });
     }
 }
